@@ -142,7 +142,7 @@ export default function OurStory() {
         </div>
 
         {/* ── RIGHT: Editorial Text Panel ── */}
-        <div className="relative flex flex-col justify-center px-10 lg:px-16 xl:px-20 py-20 lg:py-24">
+        <div className="relative flex flex-col justify-start px-10 lg:px-16 xl:px-20 pt-8 pb-12 lg:pt-10 lg:pb-16">
 
           {/* Giant ghost number background */}
           <div
@@ -163,7 +163,7 @@ export default function OurStory() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="flex items-center mb-8 relative ml-1 lg:ml-1.5"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-white">Our Story</span>
+            <span className="font-sans text-base lg:text-[18px] uppercase tracking-[0.35em] text-white font-semibold">Our Story</span>
           </motion.div>
 
           {/* Main Heading */}

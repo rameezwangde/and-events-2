@@ -98,7 +98,7 @@ export default function Testimonials() {
       {/* ── Horizontal rule top ── */}
       <div className="w-full border-t border-white/[0.06]" />
 
-      <div className="relative z-10 px-8 lg:px-[72px] pt-20 pb-24">
+      <div className="relative z-10 px-8 lg:px-[72px] pt-10 pb-10">
 
         {/* ── Header ── */}
         <div className="flex items-center justify-between mb-20">

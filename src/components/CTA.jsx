@@ -25,7 +25,7 @@ export default function CTA() {
           style={{ y }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop" 
+            src="https://festivation.com/images/dubai-festivals.webp" 
             alt="Cinematic Event Background" 
             className="w-full h-[120%] object-cover object-center"
           />
@@ -42,7 +42,7 @@ export default function CTA() {
         />
         
         {/* ── Content ── */}
-        <div className="relative z-10 text-center px-8 lg:px-[72px] max-w-[1200px] mx-auto w-full py-16 flex flex-col items-center">
+        <div className="relative z-10 text-center px-8 lg:px-[72px] max-w-[1200px] mx-auto w-full pt-16 pb-8 flex flex-col items-center">
           
           {/* Eyebrow */}
           <div className="flex items-center justify-center gap-3 mb-10">

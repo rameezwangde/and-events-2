@@ -38,10 +38,10 @@ export default function Partners() {
       <div className="w-full border-t border-black/[0.08]" />
 
       {/* ── Header ── */}
-      <div className="px-8 lg:px-[72px] pt-20 pb-16 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6">
+      <div className="px-8 lg:px-[72px] pt-10 pb-16 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6">
         <div>
           <div className="relative inline-flex items-center mb-7">
-            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#6B0F1A]">
+            <span className="font-sans text-base lg:text-[18px] uppercase tracking-[0.35em] text-[#6B0F1A] font-semibold">
               Trusted By
             </span>
           </div>
