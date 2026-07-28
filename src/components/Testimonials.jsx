@@ -102,8 +102,8 @@ export default function Testimonials() {
 
         {/* ── Header ── */}
         <div className="flex items-center justify-between mb-20">
-          <div className="flex items-center gap-3">
-            <div className="w-7 h-[1px] bg-[#A6192E]" />
+          <div className="relative inline-flex items-center">
+            <div className="absolute right-full mr-3 w-7 h-[1px] bg-[#A6192E]" />
             <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-white">
               Client Stories
             </span>
