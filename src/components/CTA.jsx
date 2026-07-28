@@ -15,13 +15,13 @@ export default function CTA() {
     <section 
       id="contact"
       ref={containerRef} 
-      className="relative w-full min-h-[90vh] bg-[#F8F3EE] p-4 lg:p-8 flex items-center justify-center"
+      className="relative w-full min-h-[90vh] bg-[#0a0a0a] flex items-center justify-center overflow-hidden selection:bg-[#A6192E] selection:text-white"
     >
-      <div className="relative w-full min-h-[85vh] rounded-[40px] lg:rounded-[80px] overflow-hidden bg-[#2B0408] flex flex-col items-center justify-center selection:bg-[#A6192E] selection:text-white shadow-2xl">
+      <div className="relative w-full min-h-full flex flex-col items-center justify-center z-10">
         
         {/* ── Parallax Background ── */}
         <motion.div 
-          className="absolute inset-0 z-0 opacity-40 pointer-events-none"
+          className="absolute inset-0 z-0 opacity-20 pointer-events-none"
           style={{ y }}
         >
           <img 
@@ -30,8 +30,8 @@ export default function CTA() {
             className="w-full h-[120%] object-cover object-center"
           />
           {/* Gradient overlays to blend it into the dark background smoothly */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2B0408] via-[#2B0408]/70 to-[#2B0408]/30"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2B0408] via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent"></div>
         </motion.div>
 
         {/* ── Film Grain Noise ── */}

@@ -23,7 +23,7 @@ export default function Header() {
         className="absolute top-0 left-0 w-full h-[90px] lg:h-[100px] z-50 flex items-center justify-between px-6 lg:px-[60px]"
         style={{ 
           borderBottom: '1px solid rgba(255,255,255,0.08)',
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 100%)',
+          background: '#930708',
         }}
       >
 
@@ -58,7 +58,7 @@ export default function Header() {
           {/* CTA Button only on Desktop */}
           <a 
             href="#contact" 
-            className="hidden lg:flex items-center justify-center bg-[#A6192E] text-white px-8 py-3.5 rounded-full font-sans text-[11px] tracking-[0.2em] uppercase font-bold hover:bg-[#8B1527] hover:scale-105 transition-all duration-300"
+            className="hidden lg:flex items-center justify-center bg-white text-[#930708] px-8 py-3.5 rounded-full font-sans text-[11px] tracking-[0.2em] uppercase font-bold hover:bg-white/90 hover:scale-105 transition-all duration-300"
           >
             Let's Create Magic
           </a>

@@ -25,7 +25,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-b from-[#2B0408] to-[#1A0204] text-white pt-20 lg:pt-32 pb-10 px-6 lg:px-[70px] relative overflow-hidden">
+    <footer className="w-full bg-gradient-to-b from-[#930708] to-[#1A0204] text-white pt-20 lg:pt-32 pb-10 px-6 lg:px-[70px] relative overflow-hidden">
       
 
       <div className="max-w-[1600px] mx-auto relative z-10">
@@ -52,7 +52,7 @@ export default function Footer() {
                   placeholder="Email address" 
                   className="bg-transparent text-white text-[14px] px-6 py-3.5 w-full outline-none placeholder:text-white/30"
                 />
-                <button className="bg-[#6E0F18] text-white px-6 font-sans text-[11px] uppercase tracking-[0.1em] font-bold hover:bg-[#A6192E] hover:text-[#2B0408] transition-colors">
+                <button className="bg-[#6E0F18] text-white px-6 font-sans text-[11px] uppercase tracking-[0.1em] font-bold hover:bg-[#A6192E] hover:text-[#930708] transition-colors">
                   Join
                 </button>
               </div>
@@ -136,7 +136,7 @@ export default function Footer() {
               <a 
                 key={idx} 
                 href={social.href} 
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#A6192E] hover:border-[#A6192E] hover:text-[#2B0408] transition-colors duration-300"
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#A6192E] hover:border-[#A6192E] hover:text-[#930708] transition-colors duration-300"
               >
                 <social.icon className="w-4 h-4" />
               </a>

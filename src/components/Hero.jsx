@@ -27,8 +27,8 @@ export default function Hero() {
       </motion.div>
 
       {/* ── Multi-layer Overlay ── */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#2B0408]/90 via-[#2B0408]/60 to-[#2B0408]/20" />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#2B0408]/90 via-transparent to-[#2B0408]/30" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/90 via-black/60 to-black/20" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/90 via-transparent to-black/30" />
 
       {/* ── Decorative grain texture ── */}
       <div

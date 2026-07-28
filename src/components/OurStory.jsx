@@ -35,7 +35,7 @@ export default function OurStory() {
     <section
       ref={sectionRef}
       id="story"
-      className="relative w-full bg-[#2B0408] overflow-hidden"
+      className="relative w-full bg-[#930708] overflow-hidden"
     >
 
       {/* ── Subtle noise texture ── */}
@@ -57,13 +57,13 @@ export default function OurStory() {
           {/* We repeat the text twice so it loops seamlessly */}
           {[...Array(2)].map((_, idx) => (
             <div key={idx} className="flex items-center gap-8 lg:gap-12 shrink-0">
-              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Dubai's Premier Event Studio</span>
+              <span className="font-serif text-[#930708] text-sm lg:text-base tracking-widest uppercase">Dubai's Premier Event Studio</span>
               <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
-              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Crafting Moments</span>
+              <span className="font-serif text-[#930708] text-sm lg:text-base tracking-widest uppercase">Crafting Moments</span>
               <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
-              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Creating Legacies</span>
+              <span className="font-serif text-[#930708] text-sm lg:text-base tracking-widest uppercase">Creating Legacies</span>
               <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
-              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Since 2012</span>
+              <span className="font-serif text-[#930708] text-sm lg:text-base tracking-widest uppercase">Since 2012</span>
               <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
             </div>
           ))}
@@ -89,8 +89,8 @@ export default function OurStory() {
               className="w-full h-full object-cover"
             />
             {/* Gradient overlays */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#2B0408]/10 via-transparent to-[#2B0408]/70" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#2B0408]/80 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
           </motion.div>
 
           {/* ── Floating Stat Badge (bottom-left of image) ── */}
@@ -161,11 +161,8 @@ export default function OurStory() {
             initial={{ opacity: 0, x: -16 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex items-center mb-8 relative"
+            className="flex items-center mb-8 relative ml-1 lg:ml-1.5"
           >
-            <div className="absolute right-full mr-3 flex items-center">
-              <Sparkles className="w-3.5 h-3.5 text-white" strokeWidth={1.5} />
-            </div>
             <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-white">Our Story</span>
           </motion.div>
 
@@ -195,7 +192,7 @@ export default function OurStory() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.9, delay: 0.7 }}
-            className="font-sans text-white/50 text-sm lg:text-[15px] leading-[1.9] mb-12 max-w-[420px]"
+            className="font-sans text-white/90 text-sm lg:text-[15px] leading-[1.9] mb-12 max-w-[420px]"
           >
             AND Events Management was born from a belief — that every celebration is one-of-a-kind and every detail matters. What started as a passion has grown into Dubai's most trusted full-service event studio.
           </motion.p>
@@ -211,21 +208,21 @@ export default function OurStory() {
                 className="group flex items-start gap-5 py-5 border-b border-white/[0.06] cursor-default hover:border-[#A6192E]/30 transition-colors duration-300"
               >
                 {/* Number */}
-                <span className="font-serif text-[13px] text-white/50 group-hover:text-white transition-colors duration-300 mt-[2px] flex-shrink-0 w-6">
+                <span className="font-serif text-[13px] text-white/90 group-hover:text-white transition-colors duration-300 mt-[2px] flex-shrink-0 w-6">
                   {pillar.number}
                 </span>
 
                 {/* Icon circle */}
                 <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-[#A6192E]/40 group-hover:bg-[#A6192E]/10 transition-all duration-300">
-                  <pillar.icon className="w-3.5 h-3.5 text-white/40 group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                  <pillar.icon className="w-3.5 h-3.5 text-white/80 group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                 </div>
 
                 {/* Text */}
                 <div className="flex flex-col">
-                  <h4 className="font-sans text-[12px] uppercase tracking-[0.18em] text-white/80 font-semibold mb-1 group-hover:text-white transition-colors duration-300">
+                  <h4 className="font-sans text-[12px] uppercase tracking-[0.18em] text-white font-semibold mb-1 transition-colors duration-300">
                     {pillar.title}
                   </h4>
-                  <p className="font-sans text-[13px] text-white/35 leading-relaxed group-hover:text-white/55 transition-colors duration-300">
+                  <p className="font-sans text-[13px] text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300">
                     {pillar.desc}
                   </p>
                 </div>

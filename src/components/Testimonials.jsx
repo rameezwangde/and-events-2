@@ -77,7 +77,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative w-full bg-[#2B0408] overflow-hidden selection:bg-[#A6192E] selection:text-white"
+      className="relative w-full bg-[#930708] overflow-hidden selection:bg-[#A6192E] selection:text-white"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
