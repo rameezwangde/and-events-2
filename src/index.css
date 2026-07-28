@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-ivory text-black font-sans antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .clip-diagonal {
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 18% 72%, 5% 52%);
+  }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.hero-marquee {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.story-ticker {
+  animation: marquee 36s linear infinite;
+  will-change: transform;
+}
+
+.partners-marquee {
+  animation: marquee 45s linear infinite;
+  will-change: transform;
+}
