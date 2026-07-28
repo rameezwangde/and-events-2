@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import Header from './Header';
+import heroImage from '../assets/and2.png';
 
 const stats = [
   { value: '500+', label: 'Events Produced' },
@@ -19,7 +20,7 @@ export default function Hero() {
         transition={{ duration: 2.2, ease: 'easeOut' }}
       >
         <img
-          src="/src/assets/and2.png"
+          src={heroImage}
           alt="Luxury event setup"
           className="w-full h-full object-cover object-center"
         />
