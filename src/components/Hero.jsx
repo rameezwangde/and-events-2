@@ -27,8 +27,8 @@ export default function Hero() {
       </motion.div>
 
       {/* ── Multi-layer Overlay ── */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/80 via-transparent to-black/30" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#2B0408]/90 via-[#2B0408]/60 to-[#2B0408]/20" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#2B0408]/90 via-transparent to-[#2B0408]/30" />
 
       {/* ── Decorative grain texture ── */}
       <div
@@ -60,7 +60,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center gap-3 mb-8"
             >
               <span className="inline-block w-8 h-[1px] bg-[#A6192E]" />
-              <span className="font-sans text-[11px] uppercase tracking-[0.3em] text-[#ff6b6b] font-medium">
+              <span className="font-sans text-[11px] uppercase tracking-[0.3em] text-white font-medium">
                 Dubai's Premier Event Studio
               </span>
               <span className="inline-block w-8 h-[1px] bg-[#A6192E]" />
@@ -74,7 +74,7 @@ export default function Hero() {
               className="font-serif text-[60px] sm:text-[76px] lg:text-[92px] xl:text-[106px] leading-[0.9] tracking-tight text-white mb-7"
             >
               <span className="block">We Don't</span>
-              <span className="block">Do <em className="not-italic" style={{ color: '#ff4444' }}>Ordinary.</em></span>
+              <span className="block">Do <em className="not-italic" style={{ color: 'white' }}>Ordinary.</em></span>
             </motion.h1>
 
             {/* Sub-headline */}

@@ -47,7 +47,7 @@ export default function Footer() {
 
             {/* Newsletter */}
             <div className="flex flex-col gap-3 max-w-[400px]">
-              <span className="font-sans text-[11px] uppercase tracking-[0.15em] text-[#ff6b6b] font-bold">
+              <span className="font-sans text-[11px] uppercase tracking-[0.15em] text-white font-bold">
                 Subscribe to our newsletter
               </span>
               <div className="flex w-full bg-white/5 rounded-full border border-white/10 overflow-hidden focus-within:border-[#A6192E] transition-colors">
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Quick Links (Col span 2) */}
           <div className="col-span-1 lg:col-span-2 flex flex-col">
-            <h6 className="font-sans text-[12px] uppercase tracking-[0.2em] text-[#ff6b6b] font-bold mb-6 lg:mb-8">
+            <h6 className="font-sans text-[12px] uppercase tracking-[0.2em] text-white font-bold mb-6 lg:mb-8">
               Company
             </h6>
             <ul className="flex flex-col gap-4">
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Services (Col span 2) */}
           <div className="col-span-1 lg:col-span-2 flex flex-col">
-            <h6 className="font-sans text-[12px] uppercase tracking-[0.2em] text-[#ff6b6b] font-bold mb-6 lg:mb-8">
+            <h6 className="font-sans text-[12px] uppercase tracking-[0.2em] text-white font-bold mb-6 lg:mb-8">
               Expertise
             </h6>
             <ul className="flex flex-col gap-4">
@@ -97,24 +97,24 @@ export default function Footer() {
 
           {/* Contact (Col span 3) */}
           <div className="col-span-1 lg:col-span-3 flex flex-col">
-            <h6 className="font-sans text-[12px] uppercase tracking-[0.2em] text-[#ff6b6b] font-bold mb-6 lg:mb-8">
+            <h6 className="font-sans text-[12px] uppercase tracking-[0.2em] text-white font-bold mb-6 lg:mb-8">
               Get in Touch
             </h6>
             <ul className="flex flex-col gap-6">
               <li className="flex items-start gap-4 group cursor-pointer">
-                <MapPin className="w-5 h-5 text-[#ff6b6b] mt-1 shrink-0 group-hover:scale-110 transition-transform" />
+                <MapPin className="w-5 h-5 text-white mt-1 shrink-0 group-hover:scale-110 transition-transform" />
                 <span className="font-sans text-[14px] text-white/70 leading-relaxed group-hover:text-white transition-colors">
                   Boulevard Plaza Tower 1,<br />Downtown Dubai, UAE
                 </span>
               </li>
               <li className="flex items-center gap-4 group cursor-pointer">
-                <Phone className="w-5 h-5 text-[#ff6b6b] shrink-0 group-hover:scale-110 transition-transform" />
+                <Phone className="w-5 h-5 text-white shrink-0 group-hover:scale-110 transition-transform" />
                 <span className="font-sans text-[14px] text-white/70 group-hover:text-white transition-colors">
                   +971 4 123 4567
                 </span>
               </li>
               <li className="flex items-center gap-4 group cursor-pointer">
-                <Mail className="w-5 h-5 text-[#ff6b6b] shrink-0 group-hover:scale-110 transition-transform" />
+                <Mail className="w-5 h-5 text-white shrink-0 group-hover:scale-110 transition-transform" />
                 <span className="font-sans text-[14px] text-white/70 group-hover:text-white transition-colors">
                   hello@andevents.ae
                 </span>

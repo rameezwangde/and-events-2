@@ -35,7 +35,7 @@ export default function OurStory() {
     <section
       ref={sectionRef}
       id="story"
-      className="relative w-full bg-[#0D0B0A] overflow-hidden"
+      className="relative w-full bg-[#2B0408] overflow-hidden"
     >
 
       {/* ── Subtle noise texture ── */}
@@ -66,8 +66,8 @@ export default function OurStory() {
               className="w-full h-full object-cover"
             />
             {/* Gradient overlays */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0D0B0A]/10 via-transparent to-[#0D0B0A]/70" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0D0B0A]/80 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#2B0408]/10 via-transparent to-[#2B0408]/70" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#2B0408]/80 via-transparent to-transparent" />
           </motion.div>
 
           {/* ── Floating Stat Badge (bottom-left of image) ── */}
@@ -88,12 +88,12 @@ export default function OurStory() {
             >
               <div className="flex items-end gap-6">
                 <div className="flex flex-col">
-                  <span className="font-serif text-[44px] leading-none text-white">500<span className="text-[#ff6b6b]">+</span></span>
+                  <span className="font-serif text-[44px] leading-none text-white">500<span className="text-white">+</span></span>
                   <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/45 mt-1">Events Produced</span>
                 </div>
                 <div className="w-[1px] h-10 bg-white/10" />
                 <div className="flex flex-col">
-                  <span className="font-serif text-[44px] leading-none text-white">12<span className="text-[#ff6b6b]">+</span></span>
+                  <span className="font-serif text-[44px] leading-none text-white">12<span className="text-white">+</span></span>
                   <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/45 mt-1">Years Active</span>
                 </div>
               </div>
@@ -138,10 +138,12 @@ export default function OurStory() {
             initial={{ opacity: 0, x: -16 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex items-center gap-3 mb-8"
+            className="flex items-center mb-8 relative"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#ff6b6b]" strokeWidth={1.5} />
-            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#ff6b6b]">Our Story</span>
+            <div className="absolute right-full mr-3 flex items-center">
+              <Sparkles className="w-3.5 h-3.5 text-white" strokeWidth={1.5} />
+            </div>
+            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-white">Our Story</span>
           </motion.div>
 
           {/* Main Heading */}
@@ -153,7 +155,7 @@ export default function OurStory() {
             style={{ fontSize: 'clamp(42px, 5.5vw, 72px)' }}
           >
             Crafting Moments.<br />
-            <span style={{ color: '#ff4444' }}>Creating Legacies.</span>
+            <span style={{ color: 'white' }}>Creating Legacies.</span>
           </motion.h2>
 
           {/* Divider */}
@@ -186,13 +188,13 @@ export default function OurStory() {
                 className="group flex items-start gap-5 py-5 border-b border-white/[0.06] cursor-default hover:border-[#A6192E]/30 transition-colors duration-300"
               >
                 {/* Number */}
-                <span className="font-serif text-[13px] text-[#ff6b6b]/50 group-hover:text-[#ff6b6b] transition-colors duration-300 mt-[2px] flex-shrink-0 w-6">
+                <span className="font-serif text-[13px] text-white/50 group-hover:text-white transition-colors duration-300 mt-[2px] flex-shrink-0 w-6">
                   {pillar.number}
                 </span>
 
                 {/* Icon circle */}
                 <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-[#A6192E]/40 group-hover:bg-[#A6192E]/10 transition-all duration-300">
-                  <pillar.icon className="w-3.5 h-3.5 text-white/40 group-hover:text-[#ff6b6b] transition-colors duration-300" strokeWidth={1.5} />
+                  <pillar.icon className="w-3.5 h-3.5 text-white/40 group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                 </div>
 
                 {/* Text */}
@@ -214,7 +216,7 @@ export default function OurStory() {
             initial={{ opacity: 0, y: 12 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 1.15 }}
-            className="group self-start flex items-center gap-3 h-[48px] px-7 border border-[#A6192E]/40 text-[#ff6b6b] font-sans text-[10px] uppercase tracking-widest font-semibold rounded-full hover:bg-[#A6192E] hover:text-white hover:border-[#A6192E] transition-all duration-300"
+            className="group self-start flex items-center gap-3 h-[48px] px-7 border border-[#A6192E]/40 text-white font-sans text-[10px] uppercase tracking-widest font-semibold rounded-full hover:bg-[#A6192E] hover:text-white hover:border-[#A6192E] transition-all duration-300"
           >
             Discover Our Journey
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" strokeWidth={2} />
