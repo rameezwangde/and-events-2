@@ -25,7 +25,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-b from-[#930708] to-[#1A0204] text-white pt-20 lg:pt-32 pb-10 px-6 lg:px-[70px] relative overflow-hidden">
+    <footer className="w-full bg-[#930708] text-white pt-20 lg:pt-32 pb-10 px-6 lg:px-[70px] relative overflow-hidden">
       
 
       <div className="max-w-[1600px] mx-auto relative z-10">

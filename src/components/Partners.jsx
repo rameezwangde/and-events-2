@@ -41,7 +41,6 @@ export default function Partners() {
       <div className="px-8 lg:px-[72px] pt-20 pb-16 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6">
         <div>
           <div className="relative inline-flex items-center mb-7">
-            <div className="absolute right-full mr-3 w-5 lg:w-7 h-[1px] bg-[#6B0F1A]" />
             <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#6B0F1A]">
               Trusted By
             </span>

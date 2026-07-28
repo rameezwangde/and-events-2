@@ -59,11 +59,10 @@ export default function OurServices() {
       className="relative w-full bg-[#F8F3EE] selection:bg-[#6B0F1A] selection:text-white"
     >
       {/* ── Header ── */}
-      <div className="px-8 lg:px-[72px] pt-24 pb-16 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6">
+      <div className="px-8 lg:px-[72px] pt-12 pb-16 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6">
         <div>
           <div className="relative inline-flex items-center mb-7">
-            <div className="absolute right-full mr-3 w-5 lg:w-7 h-[1px] bg-[#6B0F1A]" />
-            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#6B0F1A]">
+            <span className="font-sans text-[13px] lg:text-[14px] uppercase tracking-[0.35em] text-[#6B0F1A]">
               Our Services
             </span>
           </div>
@@ -101,14 +100,7 @@ export default function OurServices() {
                 className="flex items-center gap-5 lg:gap-8 px-8 lg:px-[72px]"
                 style={{ height: ROW_COLLAPSED }}
               >
-                {/* Number */}
-                <motion.span
-                  animate={{ color: isOpen ? '#A6192E' : 'rgba(0,0,0,0.45)' }}
-                  transition={{ duration: 0.3 }}
-                  className="font-serif text-[13px] leading-none flex-shrink-0 w-6 hidden sm:block"
-                >
-                  {service.number}
-                </motion.span>
+
 
                 {/* Title */}
                 <motion.h3
