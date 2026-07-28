@@ -36,8 +36,7 @@ export default function Footer() {
             <a href="#" className="flex items-center w-[150px] mb-8">
               <img src={logo} alt="AND Events Management Logo" className="w-full h-auto object-contain rounded-md" />
             </a>
-            
-            <p className="font-sans text-white/60 text-[14px] leading-relaxed max-w-[350px] mb-8">
+            <p className="font-sans text-white/90 text-[14px] leading-relaxed max-w-[350px] mb-8">
               Transforming visions into unforgettable experiences. We are Dubai's premier luxury event management agency, crafting moments that leave a lasting legacy.
             </p>
 
@@ -67,7 +66,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="font-sans text-[14px] text-white/70 hover:text-white hover:pl-2 transition-all duration-300">
+                  <a href={link.href} className="font-sans text-[14px] text-white/90 hover:text-white hover:pl-2 transition-all duration-300">
                     {link.name}
                   </a>
                 </li>
@@ -83,7 +82,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="font-sans text-[14px] text-white/70 hover:text-white hover:pl-2 transition-all duration-300">
+                  <a href={link.href} className="font-sans text-[14px] text-white/90 hover:text-white hover:pl-2 transition-all duration-300">
                     {link.name}
                   </a>
                 </li>
@@ -99,19 +98,19 @@ export default function Footer() {
             <ul className="flex flex-col gap-6">
               <li className="flex items-start gap-4 group cursor-pointer">
                 <MapPin className="w-5 h-5 text-white mt-1 shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="font-sans text-[14px] text-white/70 leading-relaxed group-hover:text-white transition-colors">
+                <span className="font-sans text-[14px] text-white/90 leading-relaxed group-hover:text-white transition-colors">
                   Boulevard Plaza Tower 1,<br />Downtown Dubai, UAE
                 </span>
               </li>
               <li className="flex items-center gap-4 group cursor-pointer">
                 <Phone className="w-5 h-5 text-white shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="font-sans text-[14px] text-white/70 group-hover:text-white transition-colors">
+                <span className="font-sans text-[14px] text-white/90 group-hover:text-white transition-colors">
                   +971 4 123 4567
                 </span>
               </li>
               <li className="flex items-center gap-4 group cursor-pointer">
                 <Mail className="w-5 h-5 text-white shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="font-sans text-[14px] text-white/70 group-hover:text-white transition-colors">
+                <span className="font-sans text-[14px] text-white/90 group-hover:text-white transition-colors">
                   hello@andevents.ae
                 </span>
               </li>
@@ -122,13 +121,13 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="w-full pt-8 border-t border-white/10 flex flex-col lg:flex-row items-center justify-between gap-6">
-          <p className="font-sans text-[13px] text-white/50">
+          <p className="font-sans text-[13px] text-white/80">
             &copy; {new Date().getFullYear()} AND Events Management. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6">
-            <a href="#" className="font-sans text-[13px] text-white/50 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="font-sans text-[13px] text-white/50 hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="font-sans text-[13px] text-white/80 hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="font-sans text-[13px] text-white/80 hover:text-white transition-colors">Terms of Service</a>
           </div>
 
           <div className="flex items-center gap-4">
@@ -136,7 +135,7 @@ export default function Footer() {
               <a 
                 key={idx} 
                 href={social.href} 
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#A6192E] hover:border-[#A6192E] hover:text-[#930708] transition-colors duration-300"
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/90 hover:bg-[#A6192E] hover:border-[#A6192E] hover:text-[#930708] transition-colors duration-300"
               >
                 <social.icon className="w-4 h-4" />
               </a>
