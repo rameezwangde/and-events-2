@@ -104,10 +104,10 @@ export default function Hero() {
 
               <a
                 href="#contact"
-                className="group inline-flex items-center gap-3 h-[52px] px-8 border border-white/30 text-white font-sans text-[11px] uppercase tracking-widest font-medium rounded-sm hover:border-white/70 hover:bg-white/5 transition-all duration-300"
+                className="group inline-flex items-center gap-3 h-[52px] px-8 bg-[#A6192E] text-white font-sans text-[11px] uppercase tracking-widest font-semibold rounded-sm hover:bg-[#8B1527] transition-all duration-300"
               >
                 Let's Create Magic
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" strokeWidth={1.5} />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" strokeWidth={2} />
               </a>
             </motion.div>
           </div>
