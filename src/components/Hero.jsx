@@ -59,11 +59,11 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="inline-flex items-center justify-center gap-3 mb-8"
             >
-              <span className="inline-block w-8 h-[1px] bg-[#C9A96E]" />
-              <span className="font-sans text-[11px] uppercase tracking-[0.3em] text-[#C9A96E] font-medium">
+              <span className="inline-block w-8 h-[1px] bg-[#A6192E]" />
+              <span className="font-sans text-[11px] uppercase tracking-[0.3em] text-[#ff6b6b] font-medium">
                 Dubai's Premier Event Studio
               </span>
-              <span className="inline-block w-8 h-[1px] bg-[#C9A96E]" />
+              <span className="inline-block w-8 h-[1px] bg-[#A6192E]" />
             </motion.div>
 
             {/* Headline */}
@@ -74,7 +74,7 @@ export default function Hero() {
               className="font-serif text-[60px] sm:text-[76px] lg:text-[92px] xl:text-[106px] leading-[0.9] tracking-tight text-white mb-7"
             >
               <span className="block">We Don't</span>
-              <span className="block">Do <em className="not-italic" style={{ color: '#C9A96E' }}>Ordinary.</em></span>
+              <span className="block">Do <em className="not-italic" style={{ color: '#ff4444' }}>Ordinary.</em></span>
             </motion.h1>
 
             {/* Sub-headline */}
@@ -96,7 +96,7 @@ export default function Hero() {
             >
               <a
                 href="#services"
-                className="group inline-flex items-center gap-3 h-[52px] px-8 bg-[#C9A96E] text-black font-sans text-[11px] uppercase tracking-widest font-semibold rounded-sm hover:bg-[#b8924f] transition-all duration-300"
+                className="group inline-flex items-center gap-3 h-[52px] px-8 bg-[#A6192E] text-white font-sans text-[11px] uppercase tracking-widest font-semibold rounded-sm hover:bg-[#8B1527] transition-all duration-300"
               >
                 Explore Services
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" strokeWidth={2} />

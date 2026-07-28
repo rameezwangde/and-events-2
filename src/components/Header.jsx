@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.jpeg';
 
 const navLinks = [
   { name: 'Home', active: true },
   { name: 'About Us', active: false },
   { name: 'Services', active: false },
   { name: 'Our Work', active: false },
-  { name: 'Themes', active: false },
   { name: 'Contact Us', active: false },
 ];
 
@@ -29,13 +29,8 @@ export default function Header() {
 
 
         {/* Logo */}
-        <a href="#" className="relative z-10 flex flex-col items-start w-[130px] lg:w-[150px]">
-          <span className="font-serif text-white text-4xl lg:text-5xl font-bold leading-none tracking-tight">
-            AND
-          </span>
-          <span className="font-sans text-white/60 text-[9px] lg:text-[10px] uppercase tracking-[0.25em] mt-1 font-medium whitespace-nowrap">
-            Events Management
-          </span>
+        <a href="#" className="relative z-10 flex items-center w-[130px] lg:w-[150px]">
+          <img src={logo} alt="AND Events Management Logo" className="w-full h-auto object-contain rounded-md" />
         </a>
 
         {/* Main Navigation (Perfectly Centered Desktop) */}
@@ -45,12 +40,12 @@ export default function Header() {
               key={link.name}
               href="#"
               className={`relative font-sans text-[13px] font-medium tracking-[0.12em] uppercase py-2 group transition-colors ${
-                link.active ? 'text-[#C9A96E]' : 'text-white/80 hover:text-white'
+                link.active ? 'text-white' : 'text-white/80 hover:text-white'
               }`}
             >
               {link.name}
               <span 
-                className={`absolute left-0 bottom-0 h-[1px] bg-[#C9A96E] transition-all duration-300 ease-out ${
+                className={`absolute left-0 bottom-0 h-[1px] bg-[#A6192E] transition-all duration-300 ease-out ${
                   link.active ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -63,7 +58,7 @@ export default function Header() {
           {/* CTA Button only on Desktop */}
           <a 
             href="#contact" 
-            className="hidden lg:flex items-center justify-center bg-[#C9A96E] text-black px-8 py-3.5 rounded-full font-sans text-[11px] tracking-[0.2em] uppercase font-bold hover:bg-[#b8924f] hover:scale-105 transition-all duration-300"
+            className="hidden lg:flex items-center justify-center bg-[#A6192E] text-white px-8 py-3.5 rounded-full font-sans text-[11px] tracking-[0.2em] uppercase font-bold hover:bg-[#8B1527] hover:scale-105 transition-all duration-300"
           >
             Let's Create Magic
           </a>

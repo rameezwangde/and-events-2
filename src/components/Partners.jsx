@@ -15,7 +15,7 @@ const partners = [
 function Dot() {
   return (
     <span
-      className="inline-block w-[5px] h-[5px] rounded-full bg-[#C9A96E] flex-shrink-0 mx-10 lg:mx-16 self-center"
+      className="inline-block w-[5px] h-[5px] rounded-full bg-[#A6192E] flex-shrink-0 mx-10 lg:mx-16 self-center"
       aria-hidden="true"
     />
   );

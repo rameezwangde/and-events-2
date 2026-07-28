@@ -77,7 +77,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative w-full bg-[#0D0B0A] overflow-hidden selection:bg-[#C9A96E] selection:text-black"
+      className="relative w-full bg-[#0D0B0A] overflow-hidden selection:bg-[#A6192E] selection:text-white"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -103,8 +103,8 @@ export default function Testimonials() {
         {/* ── Header ── */}
         <div className="flex items-center justify-between mb-20">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-[1px] bg-[#C9A96E]" />
-            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#C9A96E]">
+            <div className="w-7 h-[1px] bg-[#A6192E]" />
+            <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#ff6b6b]">
               Client Stories
             </span>
           </div>
@@ -116,7 +116,7 @@ export default function Testimonials() {
             </span>
             <div className="w-32 h-[1px] bg-white/10 relative overflow-hidden">
               <motion.div
-                className="absolute left-0 top-0 h-full bg-[#C9A96E]"
+                className="absolute left-0 top-0 h-full bg-[#A6192E]"
                 animate={{ width: `${((active + 1) / testimonials.length) * 100}%` }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
               />
@@ -158,8 +158,8 @@ export default function Testimonials() {
               className="flex items-center gap-5"
             >
               {/* Initials avatar */}
-              <div className="w-11 h-11 rounded-full border border-[#C9A96E]/30 flex items-center justify-center flex-shrink-0">
-                <span className="font-serif text-[14px] text-[#C9A96E]">
+              <div className="w-11 h-11 rounded-full border border-[#A6192E]/30 flex items-center justify-center flex-shrink-0">
+                <span className="font-serif text-[14px] text-[#ff6b6b]">
                   {t.author.charAt(0)}
                 </span>
               </div>
@@ -179,16 +179,16 @@ export default function Testimonials() {
             <button
               onClick={prev}
               aria-label="Previous testimonial"
-              className="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center hover:border-[#C9A96E]/40 transition-colors duration-300"
+              className="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center hover:border-[#A6192E]/40 transition-colors duration-300"
             >
-              <ChevronLeft className="w-4 h-4 text-white/40 group-hover:text-[#C9A96E] transition-colors" strokeWidth={1.5} />
+              <ChevronLeft className="w-4 h-4 text-white/40 group-hover:text-[#ff6b6b] transition-colors" strokeWidth={1.5} />
             </button>
             <button
               onClick={next}
               aria-label="Next testimonial"
-              className="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center hover:border-[#C9A96E]/40 transition-colors duration-300"
+              className="group w-11 h-11 rounded-full border border-white/10 flex items-center justify-center hover:border-[#A6192E]/40 transition-colors duration-300"
             >
-              <ChevronRight className="w-4 h-4 text-white/40 group-hover:text-[#C9A96E] transition-colors" strokeWidth={1.5} />
+              <ChevronRight className="w-4 h-4 text-white/40 group-hover:text-[#ff6b6b] transition-colors" strokeWidth={1.5} />
             </button>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function Testimonials() {
             >
               {active === i && (
                 <motion.div
-                  className="absolute inset-0 bg-[#C9A96E] rounded-full origin-left"
+                  className="absolute inset-0 bg-[#A6192E] rounded-full origin-left"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: paused ? undefined : 1 }}
                   transition={{ duration: 5, ease: 'linear' }}

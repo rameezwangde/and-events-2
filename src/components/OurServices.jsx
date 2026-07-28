@@ -103,7 +103,7 @@ export default function OurServices() {
               >
                 {/* Number */}
                 <motion.span
-                  animate={{ color: isOpen ? '#C9A96E' : 'rgba(0,0,0,0.45)' }}
+                  animate={{ color: isOpen ? '#A6192E' : 'rgba(0,0,0,0.45)' }}
                   transition={{ duration: 0.3 }}
                   className="font-serif text-[13px] leading-none flex-shrink-0 w-6 hidden sm:block"
                 >

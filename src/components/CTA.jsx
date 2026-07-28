@@ -15,7 +15,7 @@ export default function CTA() {
     <section 
       id="contact"
       ref={containerRef} 
-      className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#0D0B0A] selection:bg-[#C9A96E] selection:text-black"
+      className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#0D0B0A] selection:bg-[#A6192E] selection:text-white"
     >
       
       {/* ── Parallax Background ── */}
@@ -47,11 +47,11 @@ export default function CTA() {
         
         {/* Eyebrow */}
         <div className="flex items-center justify-center gap-3 mb-10">
-          <div className="w-8 h-[1px] bg-[#C9A96E]" />
-          <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#C9A96E]">
+          <div className="w-8 h-[1px] bg-[#A6192E]" />
+          <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#ff6b6b]">
             Ready to Collaborate
           </span>
-          <div className="w-8 h-[1px] bg-[#C9A96E]" />
+          <div className="w-8 h-[1px] bg-[#A6192E]" />
         </div>
 
         {/* Heading */}
@@ -72,7 +72,7 @@ export default function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="block italic font-light text-[#C9A96E] mb-2 pr-4 lg:pr-12" 
+            className="block italic font-light text-[#ff6b6b] mb-2 pr-4 lg:pr-12" 
             style={{ fontSize: 'clamp(52px, 8vw, 120px)' }}
           >
             Something
@@ -111,7 +111,7 @@ export default function CTA() {
         >
           <a 
             href="#contact" 
-            className="group relative inline-flex items-center justify-center gap-6 h-[68px] px-10 bg-[#C9A96E] text-black overflow-hidden"
+            className="group relative inline-flex items-center justify-center gap-6 h-[68px] px-10 bg-[#A6192E] text-white overflow-hidden"
           >
             {/* Hover reveal background */}
             <div className="absolute inset-0 bg-white translate-y-[101%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.16,1,0.3,1]"></div>
