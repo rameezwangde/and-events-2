@@ -47,6 +47,29 @@ export default function OurStory() {
         }}
       />
 
+      {/* ── Marquee Divider ── */}
+      <div className="w-full bg-[#F8F3EE] py-3 lg:py-4 flex overflow-hidden whitespace-nowrap z-20 relative border-b border-black/5">
+        <motion.div
+          className="flex items-center gap-8 lg:gap-12"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+        >
+          {/* We repeat the text twice so it loops seamlessly */}
+          {[...Array(2)].map((_, idx) => (
+            <div key={idx} className="flex items-center gap-8 lg:gap-12 shrink-0">
+              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Dubai's Premier Event Studio</span>
+              <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
+              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Crafting Moments</span>
+              <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
+              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Creating Legacies</span>
+              <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
+              <span className="font-serif text-[#2B0408] text-sm lg:text-base tracking-widest uppercase">Since 2012</span>
+              <span className="w-2 h-2 rounded-full bg-[#A6192E]" />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
       {/* ── MAIN GRID ── */}
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_1fr] min-h-[80vh]">
 

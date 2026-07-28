@@ -27,10 +27,6 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gradient-to-b from-[#2B0408] to-[#1A0204] text-white pt-20 lg:pt-32 pb-10 px-6 lg:px-[70px] relative overflow-hidden">
       
-      {/* Decorative large logo in background */}
-      <div className="absolute top-[-10%] left-[-5%] text-[300px] font-serif font-bold text-white/5 pointer-events-none tracking-tighter leading-none select-none">
-        AND
-      </div>
 
       <div className="max-w-[1600px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
