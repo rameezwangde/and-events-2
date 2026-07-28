@@ -15,7 +15,7 @@ export default function CTA() {
     <section 
       id="contact"
       ref={containerRef} 
-      className="relative w-full min-h-[90vh] bg-[#0a0a0a] flex items-center justify-center overflow-hidden selection:bg-[#A6192E] selection:text-white"
+      className="relative w-full bg-[#0a0a0a] flex items-center justify-center overflow-hidden selection:bg-[#A6192E] selection:text-white"
     >
       <div className="relative w-full min-h-full flex flex-col items-center justify-center z-10">
         
@@ -29,9 +29,7 @@ export default function CTA() {
             alt="Cinematic Event Background" 
             className="w-full h-[120%] object-cover object-center"
           />
-          {/* Gradient overlays to blend it into the dark background smoothly */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent"></div>
+          {/* Removed blackish gradient overlays */}
         </motion.div>
 
         {/* ── Film Grain Noise ── */}
@@ -44,7 +42,7 @@ export default function CTA() {
         />
         
         {/* ── Content ── */}
-        <div className="relative z-10 text-center px-8 lg:px-[72px] max-w-[1200px] mx-auto w-full py-24 flex flex-col items-center">
+        <div className="relative z-10 text-center px-8 lg:px-[72px] max-w-[1200px] mx-auto w-full py-16 flex flex-col items-center">
           
           {/* Eyebrow */}
           <div className="flex items-center justify-center gap-3 mb-10">
@@ -56,7 +54,7 @@ export default function CTA() {
           </div>
 
           {/* Heading */}
-          <h2 className="font-serif text-white leading-[0.95] tracking-tight mb-14 text-center">
+          <h2 className="font-serif text-white leading-[0.95] tracking-tight mb-10 text-center">
             <motion.span 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +95,7 @@ export default function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-white/50 text-[13px] md:text-[15px] leading-[1.8] max-w-[460px] mx-auto mb-16"
+            className="font-sans text-white/50 text-[13px] md:text-[15px] leading-[1.8] max-w-[460px] mx-auto mb-12"
           >
             From concept to execution, our team of experts is ready to bring your vision to life. Partner with us for your next iconic event.
           </motion.p>
